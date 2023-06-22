@@ -1,0 +1,79 @@
+.recievecard {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #f1f4f8;
+  box-shadow: 15px 15px 30px #f1f4f8,
+             -15px -15px 30px #ffffff;
+
+ margin-top: 1.6rem;    
+   
+}
+ 
+.requstinput{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+
+.requstinput:focus{
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.receivefunds-display{
+  display: flex;
+  flex-direction: column;
+}
+.request-form{
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f4f8;
+
+}
+.request-link{
+  position: relative;
+  display: inline-block;
+  margin-top:1.5rem;
+  margin-left: 55%;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #007bff;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #007bff;
+  width: 10rem;
+  
+}
+.request-link:hover{
+  color: white;
+  box-shadow: inset 0 -100px 0 0 #007bff;
+}
+.section1 , .section2 {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+}
+.requstinput{
+  width: 70%;
+}
+.request-form {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-gap: 10px;
+  align-items: center;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}

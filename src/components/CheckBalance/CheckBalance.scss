@@ -1,0 +1,137 @@
+.balance-firstcontainer {
+  border-radius: 1rem;
+}
+.balance-head{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.balance-amount__display{
+  font-size: 4rem;
+  color: #5acc97;
+  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.pending-balance__head{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.pending-balance__amount{
+  font-size: 2rem;
+  color: rgb(154, 89, 82);
+  text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.balance-btn button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.balance-btn__send {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+.balance-btn__Recieve {
+  background-color: #5acc97;
+  color: #fff;
+}
+
+.balance-btn button:hover {
+  transform: scale(1.1);
+}
+
+.balance-btn button:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
+
+.balance-secondcontainer {
+  width: 60rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+}
+
+.balance-second__head {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid grey;
+  background-color: white;
+  border-radius: 1rem;
+  color: #211f6d;
+}
+
+.balance-second__head1,
+.balance-second__head2 {
+  padding-left: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+.balance-second__subhead {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.balance-second__subhead1,
+.balance-second__subhead2,
+.balance-second__subhead3 {
+  padding-left: 0.4rem;
+  padding-right: 0.5rem;
+}
+
+.balance-second__single {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid grey;
+  background-color: white;
+  color: #211f6d;
+  border-radius: 0.5rem;
+}
+
+.balance-second__ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.balance-second__single:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+.balance-received{
+  color: #5acc97;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: rgba(21, 132, 99, 0.2);
+  border-radius: 1rem;
+  padding: 0.35rem 0.7rem;
+  margin-bottom: 0.9rem;
+  text-align: center;
+  width: 4.5rem;
+}
+.balance-sent{
+  color: rgb(240, 141, 141);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: rgba(201, 69, 21, 0.2);
+    border-radius: 1rem;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 0.9rem;
+    text-align: center;
+    width: 6rem;
+
+}

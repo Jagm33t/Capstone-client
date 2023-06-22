@@ -1,0 +1,30 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.section-left {
+  background-color: #eef2f5;
+  color: #333;
+}
+
+.section-right {
+  background-color: #f9f9f9;
+  color: #555;
+}
+
+.section-content {
+  width: 50%;
+}
+
+.section-content h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.section-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
