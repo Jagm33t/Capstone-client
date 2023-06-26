@@ -1,0 +1,41 @@
+.expense-tracker {
+  display: flex;
+  flex-direction: column;
+}
+
+.expense-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.expense-list {
+  display: flex;
+  justify-content: center;
+
+}
+
+.expense-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.expense-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.expense-subhead {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}

@@ -1,30 +1,73 @@
-.section {
+.section-1{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
+  align-items: flex-start;
+  width: 70%;
+  padding-left: 13%;
+  font-size: 1.5rem;
+  color: #5f6367;
+  
 }
 
-.section-left {
-  background-color: #eef2f5;
-  color: #333;
-}
+.abouthead{
+  font-size: 5rem;
+  padding-right:50%;
+  color: #2e2e2e;
 
-.section-right {
+}
+.section-2{
+  width: 80%;
   background-color: #f9f9f9;
-  color: #555;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  border-top-left-radius: 4rem;
+  border-bottom-left-radius: 4rem;
+  margin-top: 5%;
 }
+.content-2{
+display: flex;
+width: 100%;
+  
+}
+.section-2__para1{
+width: 100%;
+font-size: 1.6rem;
+font-weight: 700;
+padding-top: 20%;
 
-.section-content {
+
+}
+.section-2__para2{
+  width: 100%;
+  font-size: 1.4rem;
+  color: #5f6367;
+ 
+}
+.diallogin{
+ width: 50%;
+height: 40%;
+}
+.section-7display{
+  display: flex;
+  justify-content: center;
+
+  
+
+}
+.section-7para{
   width: 50%;
+  font-size: 1.5rem;
+  padding-top: 12%;
+  color: #5f6367;
+  display: inline;
 }
-
-.section-content h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.section-7{
+  background-color: #f2e4cd;
+  width: 80%;
+  border-top-right-radius:2rem ;
+  border-bottom-right-radius:2rem 
+  
 }
+.bankcarddelete{
+  width: 35%;
 
-.section-content p {
-  font-size: 16px;
-  line-height: 1.5;
 }

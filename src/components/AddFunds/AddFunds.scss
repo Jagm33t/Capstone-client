@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 50vh;
+  height: 70vh;
   border-radius: 2rem;
 }
 
@@ -28,7 +28,7 @@
   width: 8rem;
   transform: scale(1.021);
 }
-.signup-input__email{
+.addfundinput__email{
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 5px;
@@ -37,9 +37,27 @@
   outline: none;
 }
 
-.signup-input__email:focus{
+.addfundinput__email:focus{
   border-color: #007bff;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.addfundinput__name{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+}
+.addfundinput__message{
+  padding: 10px;
+  width: 20rem;
+  height: 4rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #555;
+  outline: none;
 }
 .sendlink{
   position: relative;
@@ -68,4 +86,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.addfunds-image{
+  width: 5rem;
+}
+.addfundform{
+  display: flex;
+  flex-direction: column;
 }

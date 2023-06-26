@@ -1,6 +1,7 @@
 import { NavLink  } from 'react-router-dom';
 import { useState } from 'react';
 import { ReactComponent as Hamburger } from "../../assets/icons/menu-hamburger.svg"
+import { Link } from "react-router-dom";
 
 import './Navhead.scss'
 
@@ -17,7 +18,7 @@ function Navhead (){
     <div className="navbar-container">
     {/* <h3>hello</h3> */}
       <div className="logo">
-      <span>CardMute</span>
+      <Link className='logonav' to="/">CardMute</Link>
       </div>
       <div>
         <button className='loginmobile'  >Login</button>

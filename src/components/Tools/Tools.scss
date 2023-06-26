@@ -1,0 +1,29 @@
+.tools-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+.tools-card {
+  width: 25rem;
+ height: 30rem;
+ background: rgb(255, 255, 255);
+ border-radius: 0.4em;
+ box-shadow: 0.3em 0.3em 0.7em #00000015;
+ transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ border: rgb(250, 250, 250) 0.2em solid;
+}
+.tools-card:hover {
+    border: #2e2e2e 0.1em solid;
+    cursor: pointer;
+ }
+
+
+.tools-head{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+ text-shadow: 0.3em 0.3em 0.7em #8a7e7e6f;
+}

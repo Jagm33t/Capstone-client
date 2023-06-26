@@ -1,5 +1,6 @@
 import React from 'react';
 import './Signup.scss';
+import { Link} from "react-router-dom";
 
 function Signup() {
   return (
@@ -68,8 +69,8 @@ function Signup() {
         </div>
         <button className="signup-btn">Submit</button>
         <p className="signin">
-          Already have an account? <a href="#">Sign in</a>
-        </p>
+  Already have an account? <Link to="/login">Sign in</Link>.
+</p>
       </form>
     </div>
       

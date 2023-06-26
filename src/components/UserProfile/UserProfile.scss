@@ -86,3 +86,149 @@
 .profile-details {
   animation: slideIn 0.5s ease-out;
 }
+// .modal {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 9999;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .modal-content {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+
+//   background-color: white;
+// }
+// .form-group {
+//   display: flex;
+//   flex-direction: column;
+//  height: 5rem;
+//   width: 45rem;
+//   background-color: white;
+//   border-radius: 1.25rem;
+
+
+
+.edit-profile-input{
+  padding: 0.5rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 10px;
+  color: #555;
+  outline: none;
+  width: 80%;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+
+}
+.edit-profile-input:focus {
+  border-color: #f36d5f;
+  box-shadow: 0 0 0 0.2rem rgba(243, 109, 95, 0.25);
+
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #f8f9fa;
+  padding: 1.5rem 2.4rem 1.5rem 1.5rem;
+  border-radius: 20px;
+  width: 80%; 
+  max-width: 500px;
+  height: 80%; 
+}
+
+.modal-headedit {
+  font-size: 24px;
+  color: #f36d5f;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.modal-formgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-formgroup {
+  display: flex;
+  width: 48%; /* Set the width to 48% to accommodate two inputs in one row */
+  margin-bottom: 1.5rem;
+}
+
+.modal-label {
+  font-size: 14px;
+  color: rgba(88, 87, 87, 0.822);
+}
+
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-save-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #f36d5f;
+  background-color: transparent;
+  border: 2px solid #f36d5f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+
+.modal-save-button:hover {
+  color: white;
+  background-color: #f36d5f;
+}
+
+.modal-cancel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(88, 87, 87, 0.822);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+}
+
+.modal-cancel-button:hover {
+  color: #f36d5f;
+  text-decoration: underline;
+}
+.modal-formgrouprow{
+  display: flex;
+  flex-direction: row;
+}
+.userform__fields-error {
+  color: red;
+
+  
+}
+
+.userform__fields-error.form__fields-error--hide {
+  display: none;
+}

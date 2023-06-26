@@ -1,5 +1,7 @@
 import React from 'react';
 import './Login.scss';
+import { Link } from 'react-router-dom';
+
 
 function Login() {
   return (
@@ -25,7 +27,8 @@ function Login() {
           />
         </div>
 
-        <button className='login-btn' type="submit">Login</button>
+        <Link to="/features" className="login-btn" type="submit">Login</Link>
+
       </form>
     </div>
   );

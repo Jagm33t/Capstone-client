@@ -93,6 +93,7 @@ display: flex;
 justify-content: center;
 }
 .home-thirdcontainer{
+  margin-top: 10%;
   background-color: #ffcb44;
   width: 100%;
 
@@ -100,3 +101,76 @@ justify-content: center;
 .home-thirdhead{
   color:#3c4043 ;
 }
+
+
+.home-wallet3{
+  width: 20rem;
+
+  
+}
+.home-fourthcontainer{
+  display: flex;
+  justify-content: center;
+ margin-top: 5rem;
+}
+.home-fourthdetails{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6fa6f6;
+  width: 70%;
+  border-radius: 0.5rem;
+
+}
+
+.home-fourthhead{
+  color: #3c4043;
+  padding-top: 6%;
+
+}
+.home-fourthpara{
+  width: 50%;
+  color: #19282f;
+
+}
+
+.home-fifthcontainer{
+  padding-top: 5%;
+}
+.home-fifthhead{
+padding-top: 10%;
+}
+.home-fifthdetails{
+  display: flex;
+  justify-content: space-between;
+}
+.home-fifthpara{
+  padding-left: 2%;
+  width: 80%;
+  font-size: 1.3rem;
+  color: #5f6367;
+
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.248);
+}
+.home-fifthpic1{
+  width: 40%;
+}
+
+// .home-sixthcontainer{
+//   width: 80%;
+//   padding-left: 20%;
+//   border-top-left-radius:2rem ;
+//   border-bottom-left-radius:2rem ;
+// }
+
+
+// .home-sixthdetails{
+//   background-color:#d1dde6 ;
+//   display: flex;
+// }
+// .home-sixthhead{
+//   width: 60%;
+// }
+// .home-sixthpic1{
+//   width: 40%;
+// }

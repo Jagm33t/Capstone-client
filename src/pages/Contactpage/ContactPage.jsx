@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './ContactPage.scss';
+import personel from "../../assets/images/personel.gif";
+import send from "../../assets/images/send.gif";
+import Social from '../../components/Social/Social';
+
 
 function ContactPage() {
   const [formData, setFormData] = useState({
@@ -24,6 +28,8 @@ function ContactPage() {
   };
 
   return (
+    <>
+   
     <div className="contact-container">
       <h1 className="contact-heading">Contact Us</h1>
       <form className="contact-form" onSubmit={handleSubmit}>
@@ -77,7 +83,23 @@ function ContactPage() {
 
         <input type="submit" value="Send Message" className="contact-submit" />
       </form>
+     
+     
     </div>
+
+    <div className='contact-display'>
+     <img className='contact-pic' src={personel} alt="contact" />
+     </div>
+     <div>
+       <div className='contact-display2'>
+         <h3>Email Us</h3>
+       <img src={send} className="home-sixthpic1" ></img>
+       </div>
+       <div><h3>Subscribe</h3></div>
+    <div className='socialmeadia'>
+      <Social /></div> 
+     </div>
+    </>
   );
 }
 
