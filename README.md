@@ -1,4 +1,6 @@
-# "CardMute
+# CardMute
+
+![CardMute](assets/screenshot/1.png)
 
 ## Empowering Effortless Transactions and Financial Control with Add, Send, and Track Features"
 
