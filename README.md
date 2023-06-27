@@ -47,6 +47,6 @@ Runs the app in the development mode. Open http://localhost:3000 to view applica
 
 Jagm33t
 
-# Thanks for stopping by
+# Thanks 
 
 Jagmeet
