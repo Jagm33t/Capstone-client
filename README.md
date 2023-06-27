@@ -1,7 +1,7 @@
 # CardMute
 ![2](https://github.com/Jagm33t/Capstone/assets/130860323/e9497e4f-65cc-45a6-9a08-03a1a1067d22)
 
-![1](https://github.com/Jagm33t/Capstone/assets/130860323/24036342-a08a-40fd-906c-9150368641f9)
+
 
 
 ## Empowering Effortless Transactions and Financial Control with Add, Send, and Track Features"
