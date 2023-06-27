@@ -36,6 +36,10 @@ $ npm start
 
 Runs the app in the development mode. Open http://localhost:3000 to view application in the browser.
 
+## Screenshots
+
+![Screenshot](assets/screenshot/1.png)
+![Screenshot](assets/screenshot/2.png)
 
 # Authors
 
