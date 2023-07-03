@@ -1,5 +1,5 @@
 # CardMute
-![2](https://github.com/Jagm33t/Capstone/assets/130860323/e9497e4f-65cc-45a6-9a08-03a1a1067d22)
+![2](https://github.com/Jagm33t/Capstone-client/assets/130860323/e9497e4f-65cc-45a6-9a08-03a1a1067d22)
 
 
 
