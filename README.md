@@ -10,7 +10,8 @@ Experience the future of effortless shopping with CardMute: your all-in-one digi
 
 
 ## Front end Built With
-React
+HTML,
+React,
 SASS
 
 ### Backend
