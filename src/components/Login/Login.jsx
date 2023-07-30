@@ -1,9 +1,23 @@
 import React from 'react';
 import './Login.scss';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 
 
 function Login() {
+
+  const [stored, setStored] = useState('');
+  const [userId, setUserId] = useState('');
+
+  function checkLogin() {
+    if (stored === 'john.smith@example.com') {
+      setUserId('1');
+      localStorage.setItem('userId','1');
+    } else if (stored === 'emily.johnson@example.com') {
+      setUserId('2');
+      localStorage.setItem('userId','2');
+    }
+  }
   return (
     <div className="login-container">
       
@@ -15,6 +29,9 @@ function Login() {
             type="text"
             id="username"
             className="login-username"
+            value={stored}
+            onChange={(e) => setStored(e.target.value)}
+
           />
         </div>
 
@@ -27,7 +44,7 @@ function Login() {
           />
         </div>
 
-        <Link to="/features" className="login-btn" type="submit">Login</Link>
+        <Link to="/features" className="login-btn" type="submit" onClick={checkLogin}  >Login</Link>
 
       </form>
     </div>

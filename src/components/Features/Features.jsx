@@ -10,7 +10,7 @@ import ReceiveFunds from "../ReceiveFunds/ReceiveFunds";
 import CheckBalance from "../CheckBalance/CheckBalance";
 import ViewTransactions from "../ViewTransactions/ViewTransactions";
 import Tools from "../Tools/Tools";
-
+import Coupon from "../Coupon/Coupon";
 
 function Features (){
   const [userData, setUserData] = useState(null);
@@ -30,10 +30,12 @@ function Features (){
     setActiveTab(2);
     setShowReceiveMoney(true);
   };
-  const userId = 1; 
+
   useEffect(() => {
-    const userId = 1;
-    axios
+   const userId = localStorage.getItem('userId')
+    console.log(userId)
+    if (userId) {
+      axios
       .get(`http://localhost:8080/users/${userId}`)
       .then(response => {
         const data = response.data;
@@ -43,7 +45,17 @@ function Features (){
       .catch(error => {
         console.log('Error:', error);
       });
+    } else {
+
+    }
+
+    // const userId = 2;
+
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('userId');
+  }
   
   return (
     <>
@@ -56,7 +68,7 @@ function Features (){
               <p className="profile-picnav__name">{userData.first_name}</p>
             </div>
             <div className="logout-container">
-            <Link to="/"  className="navigationbtn__logout-btn" >Logout</Link>
+            <Link to="/" onClick={handleLogout} className="navigationbtn__logout-btn" >Logout</Link>
     </div>
             <button className="navigationbtn" onClick={() => handleTabClick(0)}>User Profile</button>
             <button className="navigationbtn" onClick={() => handleTabClick(1)}>Add Money</button>
@@ -65,6 +77,7 @@ function Features (){
             <button className="navigationbtn" onClick={() => handleTabClick(4)}>View transactions</button>
             <button className="navigationbtn" onClick={() => handleTabClick(5)}>Tools</button>
             <button className="navigationbtn" onClick={() => handleTabClick(6)}>Send Money</button>
+            <button className="navigationbtn" onClick={() => handleTabClick(7)}>Online</button>
 
 
             <div>
@@ -114,21 +127,31 @@ function Features (){
                 <SendGift />
               </div>
             )}
+            {activeTab === 7 && (
+              <div>
+   
+                <Coupon />
+              </div>
+            )}
           </div>
         </div>
       ) : (
         <div class="loader">
         <p class="loadingtext">
-        <span class="letter letter1">L</span>
-        <span class="letter letter2">o</span>
-        <span class="letter letter3">a</span>
-        <span class="letter letter4">d</span>
-        <span class="letter letter5">i</span>
-        <span class="letter letter6">n</span>
-        <span class="letter letter7">g</span>
-        <span class="letter letter8">.</span>
-        <span class="letter letter9">.</span>
-        <span class="letter letter10">.</span>
+        <span class="letter letter1">P</span>
+        <span class="letter letter2">L</span>
+        <span class="letter letter3">E</span>
+        <span class="letter letter4">A</span>
+        <span class="letter letter5">S</span>
+        <span class="letter letter6">E</span>
+        <span class="letter letter7"> </span>
+        <span class="letter letter8">L</span>
+        <span class="letter letter9">O</span>
+        <span class="letter letter10">G</span>
+        <span class="letter letter11">I</span>
+        <span class="letter letter12">N</span>
+        <span class="letter letter13">.</span>
+        <span class="letter letter14">.</span>
         </p>
       </div>
       )}

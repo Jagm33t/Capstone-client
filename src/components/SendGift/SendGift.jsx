@@ -4,6 +4,7 @@ import axios from "axios";
 import "./SendGift.scss";
 import OrderButton from "../OrderButton/OrderButton";
 
+
 function SendGift() {
   const [balance, setBalance] = useState('');
   useEffect(() => {
@@ -11,7 +12,7 @@ function SendGift() {
   }, []);
 
   function getUsersBalance() {
-    const userId = 1;
+    const userId = localStorage.getItem('userId')
     axios
       .get(`http://localhost:8080/users/${userId}`)
       .then((res) => {
@@ -92,7 +93,7 @@ addTransactions();
       function updateBalance() {
         console.log("amount1", amount);
         console.log("balance1",balance);
-        const userId = 1;
+        const userId = localStorage.getItem('userId')
         axios
           .put(`http://localhost:8080/users/${userId}/updatebalance`, { balance: postData })
           .then((response) => {
@@ -121,6 +122,7 @@ addTransactions();
             <label className='sendmoney-label' htmlFor="payee">Payee:</label>
             <select id="payee">
               <option value="choose">Select</option>
+              <option value="john">john</option>
               <option value="emily">Emily</option>
               <option value="michael">Michael</option>
               <option value="emma">Emma</option>
@@ -154,6 +156,9 @@ addTransactions();
             </div>
           )
         )}
+     
+      
+
       </div>
     </>
   );

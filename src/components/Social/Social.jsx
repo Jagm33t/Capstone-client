@@ -1,11 +1,17 @@
 import "./Social.scss";
+import {  useState } from 'react';
+
 
 function Social() {
+  const [showImageContainer, setShowImageContainer] = useState(false);
+  const handleButtonClick = () => {
+    setShowImageContainer(true); 
+  };
   return (
     <>
       <div className="main">
         <div className="up">
-          <button className="socialcard1">
+          <button className="socialcard1" onClick={handleButtonClick} >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -72,7 +78,13 @@ function Social() {
             </svg>
           </button>
         </div>
-      </div>
+        {showImageContainer && (
+        <div className="image-container">
+  
+    
+        </div>
+      )}
+    </div>
     </>
   );
 }

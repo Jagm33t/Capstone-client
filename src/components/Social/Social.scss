@@ -122,4 +122,10 @@
 .socialcard4:hover .discord {
   fill: white;
 }
-
+.image_container{
+  display: flex;
+  justify-content: flex-start;
+}
+.image-container__pic{
+  width: 20rem;
+}

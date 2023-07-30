@@ -97,7 +97,7 @@ function ContactPage() {
        </div>
        <div><h3>Subscribe</h3></div>
     <div className='socialmeadia'>
-      <Social /></div> 
+      <Social /></div>
      </div>
     </>
   );

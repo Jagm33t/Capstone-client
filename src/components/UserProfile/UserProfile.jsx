@@ -6,18 +6,6 @@ function UserProfile(props) {
   const { userData } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // const [postData, setPostData] = useState({
-  //   firstName: userData.first_name,
-  //   lastName: userData.last_name,
-  //   streetNumber: userData.street_number,
-  //   province: userData.province,
-  //   country: userData.country,
-  //   phoneNumber: userData.phone_number,
-  //   email: userData.email,
-  //   username: userData.username,
-  //   password: '',
-  //   confirmPassword: '',
-  // });
 
   const [firstName, setFirstName] = useState("");
   const [validateFirstName, setValidateFirstName] = useState(false);
@@ -42,11 +30,12 @@ function UserProfile(props) {
 
   useEffect(() => {
     getAllUserProfile();
-    
   }, []);
 
   function getAllUserProfile() {
-    const userId = 1;
+    
+    const userId = localStorage.getItem('userId')
+    
     axios
       .get(`http://localhost:8080/users/${userId}`)
       .then((res) => {
@@ -151,14 +140,15 @@ function UserProfile(props) {
       };
   
       function updateUserProfile() {
-        const userId = 1; 
+        const userId = localStorage.getItem('userId')
        
         axios
           .put(`http://localhost:8080/users/${userId}`, postData)
           .then((response) => {
-            console.log(response);
-            console.log(postData);
+            
             console.log("Data sent successfully");
+            setIsModalOpen(false);
+      window.location.reload(); 
 
 
             setIsModalOpen(false);
