@@ -1,6 +1,8 @@
 # CardMute
+![2](https://github.com/Jagm33t/Capstone-client/blob/master/src/assets/screenshot/2.png)
 
-![CardMute](assets/screenshot/1.png)
+
+
 
 ## Empowering Effortless Transactions and Financial Control with Add, Send, and Track Features"
 
@@ -8,7 +10,8 @@ Experience the future of effortless shopping with CardMute: your all-in-one digi
 
 
 ## Front end Built With
-React
+HTML,
+React,
 SASS
 
 ### Backend
@@ -43,6 +46,14 @@ Runs the app in the development mode. Open http://localhost:3000 to view applica
 
 
 
+- Add funds from various sources[click on each bank icon to link account (its actually taking you to banking loginpage)or use e-transfer and its sendig email to request money.]
+- Send money to loved ones worldwide [Add payee feature and enter details feature to send money]
+- Monitor account balance in different currencies [Amount Changes with the send money feature and also select currency in which want to view currency ]
+- Use the calculator and expense calculator in tools option to manage funds.
+- Currency converter for easy transactions[Always renders the latest currency value rates from Api]
+-Signup and login feature
+- View transaction history[use view transactions to se updated transaction when send feature is used]
+- Exciting upcoming features in development[In progress]
 
 # Authors
 
