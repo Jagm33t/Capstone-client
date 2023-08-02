@@ -40,7 +40,7 @@ function Features (){
       .then(response => {
         const data = response.data;
         setUserData(data);
-        console.log(data); // Example: Log the data to the console
+        console.log(data); 
       })
       .catch(error => {
         console.log('Error:', error);
