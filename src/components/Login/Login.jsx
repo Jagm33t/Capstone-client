@@ -1,23 +1,33 @@
 import React from 'react';
 import './Login.scss';
 import { Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-
+import { useState } from 'react';
+import axios from 'axios';
 
 function Login() {
 
-  const [stored, setStored] = useState('');
-  const [userId, setUserId] = useState('');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
 
-  function checkLogin() {
-    if (stored === 'john.smith@example.com') {
-      setUserId('1');
-      localStorage.setItem('userId','1');
-    } else if (stored === 'emily.johnson@example.com') {
-      setUserId('2');
-      localStorage.setItem('userId','2');
-    }
-  }
+  const handleLogin = (e) => {
+    e.preventDefault();
+
+    axios.post('http://localhost:8080/users/login', {username: username, password:password})
+    .then ((response) => {
+      const { accessToken,userId} =response.data;
+
+      localStorage.setItem('jwtToken' , accessToken);
+      localStorage.setItem('userId' , userId);
+
+      alert("Login successful")
+      window.location.href = '/features';
+
+    })
+    .catch((error) => {
+      console.error('Login failed:', error);
+      alert('Login failed')
+    });
+};
   return (
     <div className="login-container">
       
@@ -29,8 +39,8 @@ function Login() {
             type="text"
             id="username"
             className="login-username"
-            value={stored}
-            onChange={(e) => setStored(e.target.value)}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
 
           />
         </div>
@@ -38,13 +48,15 @@ function Login() {
         <div className="form-group">
           <label htmlFor="password">Password:</label>
           <input
-            type="password"
-            id="password"
-            className="login-password"
+           type="password"
+           id="password"
+           className="login-password"
+           value={password}
+           onChange={(e) => setPassword(e.target.value)}
           />
         </div>
 
-        <Link to="/features" className="login-btn" type="submit" onClick={checkLogin}  >Login</Link>
+        <Link to="/features" className="login-btn" type="submit" onClick={handleLogin}>Login</Link>
 
       </form>
     </div>

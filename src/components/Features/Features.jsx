@@ -11,6 +11,7 @@ import CheckBalance from "../CheckBalance/CheckBalance";
 import ViewTransactions from "../ViewTransactions/ViewTransactions";
 import Tools from "../Tools/Tools";
 import Coupon from "../Coupon/Coupon";
+import getUserData from "../GetUserInfo/GetUserInfo";
 
 function Features (){
   const [userData, setUserData] = useState(null);
@@ -30,30 +31,24 @@ function Features (){
     setActiveTab(2);
     setShowReceiveMoney(true);
   };
-
   useEffect(() => {
-   const userId = localStorage.getItem('userId')
-    console.log(userId)
-    if (userId) {
-      axios
-      .get(`http://localhost:8080/users/${userId}`)
-      .then(response => {
-        const data = response.data;
-        setUserData(data);
-        console.log(data); 
-      })
-      .catch(error => {
-        console.log('Error:', error);
-      });
-    } else {
+    // Get the JWT token from local storage
+    const jwtToken = localStorage.getItem('jwtToken');
 
+    if (jwtToken) {
+      getUserData(jwtToken)
+        .then((response) => {
+          const userData = response.data;
+          setUserData(userData);
+        })
+        .catch((error) => {
+          console.error('Failed to fetch user data:', error);
+        });
     }
-
-    // const userId = 2;
-
   }, []);
 
   const handleLogout = () => {
+    localStorage.removeItem('jwtToken');
     localStorage.removeItem('userId');
   }
   
