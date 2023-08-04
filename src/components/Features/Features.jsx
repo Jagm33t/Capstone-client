@@ -34,9 +34,10 @@ function Features (){
   useEffect(() => {
     // Get the JWT token from local storage
     const jwtToken = localStorage.getItem('jwtToken');
+    const userId = localStorage.getItem('userId'); 
 
-    if (jwtToken) {
-      getUserData(jwtToken)
+    if (jwtToken && userId) {
+      getUserData(jwtToken, userId)
         .then((response) => {
           const userData = response.data;
           setUserData(userData);
