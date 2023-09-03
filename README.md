@@ -12,8 +12,10 @@ Experience the future of effortless shopping with CardMute: your all-in-one digi
 ## Front end Built With
 HTML,
 React,
-SASS
-
+SASS,
+Axios,
+Web Api,
+JWT Web Token,
 ### Backend
 https://github.com/Jagm33t/Capston-Api
 
