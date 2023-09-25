@@ -1,19 +1,34 @@
 # CardMute
-![2](https://github.com/Jagm33t/Capstone-client/blob/master/src/assets/screenshot/2.png)
+
+
+
+
+https://github.com/Jagm33t/Capstone-client/assets/130860323/5837fcab-b01b-4140-81ba-c8150e23e723
+
+
+
+
+
 
 
 
 
 ## Empowering Effortless Transactions and Financial Control with Add, Send, and Track Features"
 
-Experience the future of effortless shopping with CardMute: your all-in-one digital wallet for seamless transactions and peace of mind. This cutting-edge web application empowers users to effortlessly add funds from various sources, such as bank transfers, and enables hassle-free money transfers to loved ones worldwide. Stay on top of your finances with the check balance feature, which lets you monitor your funds in different currencies, while handy tools like the expense calculator and currency converter make managing your digital wallet a breeze. Safeguard your information with the secure signup and login feature, granting you access to your account for viewing and editing purposes. Keep tabs on your money with the convenient view transaction feature. Exciting upcoming features will continue to enhance the convenience of this digital wallet, making it your go-to choice for effortless and secure transactions.
+Introducing CardMute: Your all-in-one digital wallet for easy funds management, global transfers, and secure transactions. Add funds, check balances, and enjoy handy tools like expense calculator and currency converter. Stay tuned for more features. Effortless shopping starts here.
+
+At CardMute, your security is our priority. Sign up with confidence as our robust validation process ensures your information is protected. We store your data securely in a MySQL database, encrypted with JWT token format. Once signed up, explore your profile section with ease. Update your information, check balances, send money securely, and even request funds using email.js integration. View your transaction history and stay informed about currency rates - all in one seamless experience. Your trust in CardMute is well-placed, and your financial convenience is our commitment.
+
 
 
 ## Front end Built With
 HTML,
 React,
-SASS
-
+SASS,
+Axios,
+Web Api,
+Email.js,
+JWT Web Token,
 ### Backend
 https://github.com/Jagm33t/Capston-Api
 
