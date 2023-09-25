@@ -21,7 +21,7 @@ function Calculator() {
   };
 
   const handleEqualClick = () => {
-    setResult(eval(input));
+    setResult(input);
     setInput('');
   };
 

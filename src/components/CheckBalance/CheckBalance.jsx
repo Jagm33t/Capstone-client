@@ -10,6 +10,7 @@ const [toCurrency, setToCurrency] = useState('');
 const[amount, setAmount] = useState(userData.balance); 
 const   [changeDisplay, setChangeDisplay] = useState(''); 
 
+
 const handleSendButtonClick = () => {
   onSendGiftButtonClick();
 };
@@ -20,6 +21,8 @@ const handleReceiveButtonClick = () => {
 function handleToCurrencyChange(event){
 console.log(event.target.value);
   setToCurrency(event.target.value)
+  console.log(setFromCurrency)
+  console.log(setAmount)
 }
   const fetchData = async () => {
 
@@ -53,7 +56,7 @@ console.log(event.target.value);
   useEffect(() => {
     fetchData();
     
-  }, [toCurrency]);
+  }, [toCurrency, userData.balance,fetchData]);
 
 
   const BalanceDisplay = () => {
@@ -77,7 +80,7 @@ console.log(event.target.value);
       }, 1000 / framesPerSecond);
 
       return () => clearInterval(interval);
-    }, []);
+    }, [finalAmount]);
 
     return (
       <>

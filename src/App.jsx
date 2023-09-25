@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navhead from './components/Navhead/Navhead';
 import LoginPage from './pages/LoginPage/LoginPage';
-import Features from './components/Features/Features';
 import HomePage from './pages/Homepage/HomePage';
 import FeaturesPage from './pages/Featurespage/featuresPage';
 import AboutPage from './pages/Aboutpage/AboutPage';

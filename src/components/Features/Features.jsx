@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import SendGift from "../SendGift/SendGift";
-import axios from 'axios';
+// import axios from 'axios';
 import "./Features.scss";
 import UserProfile from "../UserProfile/UserProfile";
 import AddFunds from "../AddFunds/AddFunds";
@@ -20,6 +20,8 @@ function Features (){
   const [showReceiveMoney, setShowReceiveMoney] = useState(false);
   const handleTabClick = (index) => {
     setActiveTab(index);
+    console.log(showSendGift)
+    console.log(showReceiveMoney)
   };
 
   const handleSendGiftButtonClick = () => {
@@ -60,7 +62,7 @@ function Features (){
           <div className="navbarleft">
             <div>
             <div className="profile-picnav">
-              <img className="profilepic1" src={userData.img} alt="Profile Picture" /></div>
+              <img className="profilepic1" src={userData.img} alt="Profile" /></div>
               <p className="profile-picnav__name">{userData.first_name}</p>
             </div>
             <div className="logout-container">

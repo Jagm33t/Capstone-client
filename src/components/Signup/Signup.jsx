@@ -39,7 +39,7 @@ function Signup() {
       username: username,
       password: password,
       confirm_password: confirmPassword,
-      img:'',
+      img:'profilepic.jpeg',
       balance:'',
       last_opened:'',
       last_payment:'',
@@ -53,7 +53,9 @@ function Signup() {
       .then((response) => {
         // Handle the response from the backend if needed
        
-        console.log(response.data);
+       
+        alert("Signup successful")
+      window.location.href = '/login';
       })
       .catch((error) => {
         // Handle errors if the request fails

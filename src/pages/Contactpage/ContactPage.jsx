@@ -93,7 +93,7 @@ function ContactPage() {
      <div>
        <div className='contact-display2'>
          <h3>Email Us</h3>
-       <img src={send} className="home-sixthpic1" ></img>
+       <img src={send} className="home-sixthpic1" alt='sending' ></img>
        </div>
        <div><h3>Subscribe</h3></div>
     <div className='socialmeadia'>

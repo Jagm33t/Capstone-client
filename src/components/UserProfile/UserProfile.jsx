@@ -438,7 +438,7 @@ return (
     <button className="edit-button" onClick={handleEditButtonClick}>Edit</button>
     <div className="profile-content">
       <div className="profile-picdisplay">
-        <img className="profilepic" src={userData.img} alt="Profile Picture" />
+        <img className="profilepic" src={userData.img} alt="Profile" />
       </div>
       <div className="profile-content__details">
         <p>Name: {userData.first_name} {userData.last_name}</p>

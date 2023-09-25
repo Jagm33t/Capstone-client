@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './CurrencyConverter.scss';
-import Calculator from '../Calculator/Calculator';
+// import Calculator from '../Calculator/Calculator';
 
 const CurrencyConverter = () => {
   const [fromCurrency, setFromCurrency] = useState('');
@@ -32,7 +32,7 @@ const CurrencyConverter = () => {
           q: amount
         },
         headers: {
-          'X-RapidAPI-Key': '013f92388fmsh87c6dcd7849dbbap1cccacjsn4ff57e91995a',
+          'X-RapidAPI-Key': '503bb785afmshd434ba03e484976p1751bdjsna32cc76e369e',
           'X-RapidAPI-Host': 'currency-exchange.p.rapidapi.com'
         }
       };

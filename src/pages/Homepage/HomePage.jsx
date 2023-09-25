@@ -1,6 +1,6 @@
 import "./HomePage.scss";
-import Home1 from "../../assets/images/home1.png";
-import Home from "../../assets/images/Home.jpeg"
+// import Home1 from "../../assets/images/home1.png";
+// import Home from "../../assets/images/Home.jpeg"
 import homewallet from "../../assets/images/homewallet.png";
 import homewallet2 from "../../assets/images/wallet2.png";
 import buytems from '../../assets/images/buyitems.gif'
@@ -8,7 +8,7 @@ import track from '../../assets/images/track.gif';
 import show from '../../assets/images/show.gif'
 import { Link } from 'react-router-dom';
 import BankingApp from "../../assets/images/BankingApp.png";
-import sendgift from "../../assets/images/sendgift.gif";
+// import sendgift from "../../assets/images/sendgift.gif";
 
 function HomePage (){
 
@@ -21,7 +21,7 @@ function HomePage (){
         </h1>
           <p className="home-headingpara">Experience the future of effortless shopping with CardMute:
            your all-in-one digital wallet for seamless transactions and peace of mind. Say goodbye to carrying multiple cards and hello to secure convenience as CardMute securely stores your payment methods, loyalty cards, and digital coupons. </p>
-           <img className="homewallet" src={homewallet} ></img>
+           <img className="homewallet" src={homewallet} alt="wallet" ></img>
            <Link to="/signup">
               <button className="home-signupbtn">Sign Up</button>
            </Link>
@@ -36,7 +36,7 @@ function HomePage (){
          <p className="home-headingpara2">Simplify your payments and enjoy the convenience of paying quickly from your CardMute digital wallet, accepted at numerous locations worldwide. Say goodbye to fumbling for cards or sharing sensitive information – with CardMute, your payments are effortless and secure. Experience the freedom to pay instantly, wherever you go, with our seamless and widely accepted digital wallet solution.</p>
          </div>
 
-         <img className="home-wallet2" src={homewallet2}></img>
+         <img className="home-wallet2" src={homewallet2} alt=""></img>
          
        </div>
        
@@ -46,8 +46,8 @@ function HomePage (){
        <div className="home-thirdcontainer">
          <div className="home-thirddetails">
          <h3 className="home-thirdhead">Experience Seamless Bliss with Cardmute Wallet: Unlock Exquisite Delights and Effortless Ticket Purchases!</h3>
-         <img className="home-wallet2" src={track}></img> 
-         <img className="home-wallet2" src={buytems}></img> 
+         <img className="home-wallet2" src={track} alt="wallet2"></img> 
+         <img className="home-wallet2" src={buytems} alt="wall"></img> 
          </div>
        </div>
      </div>
@@ -55,7 +55,7 @@ function HomePage (){
        
        <div className="home-fifthcontainer">
          <div className="home-fifthdetails">
-         <img src={BankingApp} className="home-fifthpic1" ></img>
+         <img src={BankingApp} className="home-fifthpic1" alt="bank" ></img>
           <div className="home-fifthleft">
           <h2 className="home-fifthhead">
        Revolutionize Your Wallet Management: Simplify, Expand, and Control Your Cards!
@@ -75,7 +75,7 @@ function HomePage (){
        <div className="home-fourthcontainer">
          <div className="home-fourthdetails">
     
-         <img className="home-wallet3" src={show}></img>
+         <img className="home-wallet3" src={show} alt="wall3"></img>
       
            <p className="home-fourthpara" >
 Full advantage of the privacy and security built into website is taken by Wallet, which is designed to protect your identity and keep what’s yours yours.

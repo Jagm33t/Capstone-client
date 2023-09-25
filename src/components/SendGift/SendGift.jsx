@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import axios from "axios";
 import "./SendGift.scss";
 import OrderButton from "../OrderButton/OrderButton";
@@ -73,8 +73,7 @@ function SendGift() {
     console.log("dsds", amount)
 
    function addTransactions(){
-   axios.
-   post('http://localhost:8080/transactions', {amount})
+   axios.post('http://localhost:8080/transactions', {amount})
    .then ((response) =>{
     console.log("postresponse",response);
 
