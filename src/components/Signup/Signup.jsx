@@ -60,6 +60,7 @@ function Signup() {
       .catch((error) => {
         // Handle errors if the request fails
         console.error(error);
+        alert(error.response.data.error);
       });
   };
 
